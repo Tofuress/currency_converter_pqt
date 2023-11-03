@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1052</width>
-    <height>600</height>
+    <width>892</width>
+    <height>602</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,7 +22,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>531</width>
+      <width>541</width>
       <height>91</height>
      </rect>
     </property>
@@ -61,8 +61,8 @@
    <widget class="QLineEdit" name="input_amount">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>210</y>
+      <x>10</x>
+      <y>240</y>
       <width>380</width>
       <height>60</height>
      </rect>
@@ -80,8 +80,8 @@ color: #fff;</string>
    <widget class="QLineEdit" name="output_amount">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>400</y>
+      <x>10</x>
+      <y>420</y>
       <width>380</width>
       <height>60</height>
      </rect>
@@ -96,243 +96,15 @@ color: #fff;
     <property name="alignment">
      <set>Qt::AlignCenter</set>
     </property>
-   </widget>
-   <widget class="QComboBox" name="output_currency">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>320</y>
-      <width>380</width>
-      <height>60</height>
-     </rect>
+    <property name="readOnly">
+     <bool>true</bool>
     </property>
-    <property name="font">
-     <font>
-      <family>Felix Titling</family>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: #22222e;
-border: 2px solid #f66867;
-color: #fff;</string>
-    </property>
-    <item>
-     <property name="text">
-      <string>RUB - Рубль</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>USD - Доллар США</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>EUR - Евро</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>JPY - Японская йена</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>GBP - Британский фунт стерлингов</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>CAD - Канадский доллар</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>AUD - Австралийский доллар</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>CHF - Швейцарский франк</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>SGD - Сингапурский доллар</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>HKD - Гонконгский доллар</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>SEK - Шведская крона</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>NOK - Норвежская крона</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>DKK - Датская крона</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>NZD - Новозеландский доллар</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ZAR - Южноафриканский рэнд</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>BRL - Бразильский реал</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>KRW - Южнокорейская вона</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>CNY - Китайский юань</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>INR - Индийская рупия</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>MYR - Малайзийский ринггит</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>THB - Тайский бат</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>MXN - Мексиканское песо</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>PHP - Филиппинское песо</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>HUF - Венгерский форинт</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>IDR - Индонезийская рупия</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>CZK - Чешская крона</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>RON - Румынский лей</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>TRY - Турецкая лира</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ISK - Исландская крона</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>HRK - Хорватская куна</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>BGN - Болгарский лев</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>NZD - Новозеландский доллар</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>PLN - Польский злотый</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>LTL - Литовский лит</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>SIT - Словенский толар</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>ROL - Румынский лей</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>TRL - Турецкая лира</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>SKK - Словацкая крона</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>LVL - Латвийский лат</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>MTL - Мальтийская лира</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>EEK - Эстонская крона</string>
-     </property>
-    </item>
-    <item>
-     <property name="text">
-      <string>CYP - Кипрский фунт</string>
-     </property>
-    </item>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>480</y>
+      <x>60</x>
+      <y>510</y>
       <width>380</width>
       <height>60</height>
      </rect>
@@ -354,8 +126,8 @@ color: #fff;</string>
    <widget class="QComboBox" name="input_currency">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>130</y>
+      <x>10</x>
+      <y>160</y>
       <width>261</width>
       <height>60</height>
      </rect>
@@ -371,6 +143,11 @@ color: #fff;</string>
 border: 2px solid #f66867;
 color: #fff;</string>
     </property>
+    <item>
+     <property name="text">
+      <string>Найдите валюту в списке</string>
+     </property>
+    </item>
     <item>
      <property name="text">
       <string>RUB - Рубль</string>
@@ -585,14 +362,361 @@ color: #fff;</string>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>90</y>
-      <width>221</width>
+      <x>290</x>
+      <y>160</y>
+      <width>41</width>
       <height>51</height>
      </rect>
     </property>
     <property name="text">
-     <string>Найдите исходную валюту в списке</string>
+     <string>или</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="input_text_currency">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>170</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="output_currency">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>261</width>
+      <height>60</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Felix Titling</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #22222e;
+border: 2px solid #f66867;
+color: #fff;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Найдите валюту в списке</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RUB - Рубль</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>USD - Доллар США</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EUR - Евро</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>JPY - Японская йена</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GBP - Британский фунт стерлингов</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CAD - Канадский доллар</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AUD - Австралийский доллар</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CHF - Швейцарский франк</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SGD - Сингапурский доллар</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HKD - Гонконгский доллар</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SEK - Шведская крона</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NOK - Норвежская крона</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DKK - Датская крона</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NZD - Новозеландский доллар</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZAR - Южноафриканский рэнд</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BRL - Бразильский реал</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>KRW - Южнокорейская вона</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CNY - Китайский юань</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>INR - Индийская рупия</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MYR - Малайзийский ринггит</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>THB - Тайский бат</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MXN - Мексиканское песо</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PHP - Филиппинское песо</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HUF - Венгерский форинт</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>IDR - Индонезийская рупия</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CZK - Чешская крона</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RON - Румынский лей</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TRY - Турецкая лира</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ISK - Исландская крона</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HRK - Хорватская куна</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BGN - Болгарский лев</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>NZD - Новозеландский доллар</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PLN - Польский злотый</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LTL - Литовский лит</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SIT - Словенский толар</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ROL - Румынский лей</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TRL - Турецкая лира</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SKK - Словацкая крона</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LVL - Латвийский лат</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MTL - Мальтийская лира</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EEK - Эстонская крона</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CYP - Кипрский фунт</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>340</y>
+      <width>41</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>или</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="output_text_currency">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>350</y>
+      <width>191</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>110</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Введите исходную сумму и её валюту </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>300</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Введите валюту конечной сумму</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>0</y>
+      <width>361</width>
+      <height>611</height>
+     </rect>
     </property>
    </widget>
   </widget>
