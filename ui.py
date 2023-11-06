@@ -14,60 +14,65 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(892, 602)
+        MainWindow.resize(858, 606)
+        MainWindow.setStyleSheet("background: #BDB76B;")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setStyleSheet("")
         self.centralwidget.setObjectName("centralwidget")
-        self.frame = QtWidgets.QFrame(self.centralwidget)
-        self.frame.setGeometry(QtCore.QRect(0, 0, 541, 91))
-        self.frame.setStyleSheet("background-color: #f66867")
-        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame.setObjectName("frame")
-        self.label = QtWidgets.QLabel(self.frame)
-        self.label.setGeometry(QtCore.QRect(10, 30, 311, 61))
+        self.frame_2 = QtWidgets.QFrame(self.centralwidget)
+        self.frame_2.setGeometry(QtCore.QRect(540, 0, 541, 101))
+        self.frame_2.setStyleSheet("background-color: #FAFAD2")
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.label_8 = QtWidgets.QLabel(self.frame_2)
+        self.label_8.setGeometry(QtCore.QRect(10, 10, 311, 81))
         font = QtGui.QFont()
         font.setFamily("Gadugi")
         font.setPointSize(20)
-        self.label.setFont(font)
-        self.label.setStyleSheet("color: #fff;")
-        self.label.setObjectName("label")
-        self.input_amount = QtWidgets.QLineEdit(self.centralwidget)
-        self.input_amount.setGeometry(QtCore.QRect(10, 240, 380, 60))
-        self.input_amount.setStyleSheet("background-color: #22222e;\n"
-"border: 2px solid #f66867;\n"
-"border-radius: 30;\n"
-"color: #fff;")
-        self.input_amount.setAlignment(QtCore.Qt.AlignCenter)
-        self.input_amount.setObjectName("input_amount")
-        self.output_amount = QtWidgets.QLineEdit(self.centralwidget)
-        self.output_amount.setGeometry(QtCore.QRect(10, 420, 380, 60))
-        self.output_amount.setStyleSheet("background-color: #22222e;\n"
-"border: 2px solid #f66867;\n"
-"border-radius: 30;\n"
-"color: #fff;\n"
-"")
-        self.output_amount.setAlignment(QtCore.Qt.AlignCenter)
-        self.output_amount.setReadOnly(True)
-        self.output_amount.setObjectName("output_amount")
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(60, 510, 380, 60))
+        self.label_8.setFont(font)
+        self.label_8.setStyleSheet("")
+        self.label_8.setObjectName("label_8")
+        self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
+        self.tabWidget.setGeometry(QtCore.QRect(0, 0, 861, 621))
+        self.tabWidget.setStyleSheet("QTabBar::tab {\n"
+"    height: 91px;\n"
+"    width: 263px;\n"
+"    border: 2px solid #B8860B;\n"
+"    border-bottom-color: #B8860B;\n"
+"    background-color: #F0E68C;\n"
+"    padding: 2px;\n"
+"    \n"
+"}\n"
+"\n"
+"QTabBar::tab:selected, QTabBar::tab:hover {\n"
+"    background: #FAFAD2;\n"
+"    border-bottom-color: #f66867;\n"
+"}\n"
+"\n"
+"QTabWidget {\n"
+"    border: none;\n"
+"}")
+        self.tabWidget.setTabShape(QtWidgets.QTabWidget.Rounded)
+        self.tabWidget.setObjectName("tabWidget")
+        self.tab = QtWidgets.QWidget()
+        self.tab.setStyleSheet("")
+        self.tab.setObjectName("tab")
+        self.label_4 = QtWidgets.QLabel(self.tab)
+        self.label_4.setGeometry(QtCore.QRect(120, 20, 281, 41))
         font = QtGui.QFont()
-        font.setFamily("Felix Titling")
-        self.pushButton.setFont(font)
-        self.pushButton.setStyleSheet("background-color: #22222e;\n"
-"border: 2px solid #f66867;\n"
-"color: #fff;")
-        self.pushButton.setObjectName("pushButton")
-        self.input_currency = QtWidgets.QComboBox(self.centralwidget)
-        self.input_currency.setGeometry(QtCore.QRect(10, 160, 261, 60))
+        font.setPointSize(12)
+        self.label_4.setFont(font)
+        self.label_4.setObjectName("label_4")
+        self.input_currency = QtWidgets.QComboBox(self.tab)
+        self.input_currency.setGeometry(QtCore.QRect(10, 70, 261, 60))
         font = QtGui.QFont()
         font.setFamily("Felix Titling")
         font.setPointSize(10)
         self.input_currency.setFont(font)
-        self.input_currency.setStyleSheet("background-color: #22222e;\n"
+        self.input_currency.setStyleSheet("background: #EEE8AA;\n"
 "border: 2px solid #f66867;\n"
-"color: #fff;")
+"")
         self.input_currency.setObjectName("input_currency")
         self.input_currency.addItem("")
         self.input_currency.addItem("")
@@ -112,24 +117,45 @@ class Ui_MainWindow(object):
         self.input_currency.addItem("")
         self.input_currency.addItem("")
         self.input_currency.addItem("")
-        self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(290, 160, 41, 51))
-        self.label_2.setObjectName("label_2")
-        self.input_text_currency = QtWidgets.QTextEdit(self.centralwidget)
-        self.input_text_currency.setGeometry(QtCore.QRect(330, 170, 191, 41))
+        self.label_5 = QtWidgets.QLabel(self.tab)
+        self.label_5.setGeometry(QtCore.QRect(140, 210, 271, 41))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.label_5.setFont(font)
+        self.label_5.setObjectName("label_5")
+        self.input_text_currency = QtWidgets.QTextEdit(self.tab)
+        self.input_text_currency.setGeometry(QtCore.QRect(330, 70, 191, 61))
+        font = QtGui.QFont()
+        font.setFamily("Felix Titling")
+        font.setPointSize(10)
+        self.input_text_currency.setFont(font)
         self.input_text_currency.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.input_text_currency.setStyleSheet("")
+        self.input_text_currency.setStyleSheet("background: #EEE8AA;\n"
+"border: 2px solid #f66867;")
         self.input_text_currency.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)
         self.input_text_currency.setObjectName("input_text_currency")
-        self.output_currency = QtWidgets.QComboBox(self.centralwidget)
-        self.output_currency.setGeometry(QtCore.QRect(10, 340, 261, 60))
+        self.input_amount = QtWidgets.QLineEdit(self.tab)
+        self.input_amount.setGeometry(QtCore.QRect(10, 150, 380, 60))
+        font = QtGui.QFont()
+        font.setFamily("Felix Titling")
+        font.setPointSize(12)
+        self.input_amount.setFont(font)
+        self.input_amount.setStyleSheet("background: #EEE8AA;\n"
+"border: 2px solid #f66867;\n"
+"border-radius: 20;")
+        self.input_amount.setAlignment(QtCore.Qt.AlignCenter)
+        self.input_amount.setObjectName("input_amount")
+        self.label_2 = QtWidgets.QLabel(self.tab)
+        self.label_2.setGeometry(QtCore.QRect(290, 70, 56, 51))
+        self.label_2.setObjectName("label_2")
+        self.output_currency = QtWidgets.QComboBox(self.tab)
+        self.output_currency.setGeometry(QtCore.QRect(10, 250, 261, 60))
         font = QtGui.QFont()
         font.setFamily("Felix Titling")
         font.setPointSize(10)
         self.output_currency.setFont(font)
-        self.output_currency.setStyleSheet("background-color: #22222e;\n"
-"border: 2px solid #f66867;\n"
-"color: #fff;")
+        self.output_currency.setStyleSheet("background: #EEE8AA;\n"
+"border: 2px solid #f66867;")
         self.output_currency.setObjectName("output_currency")
         self.output_currency.addItem("")
         self.output_currency.addItem("")
@@ -174,40 +200,79 @@ class Ui_MainWindow(object):
         self.output_currency.addItem("")
         self.output_currency.addItem("")
         self.output_currency.addItem("")
-        self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(290, 340, 41, 51))
-        self.label_3.setObjectName("label_3")
-        self.output_text_currency = QtWidgets.QTextEdit(self.centralwidget)
-        self.output_text_currency.setGeometry(QtCore.QRect(330, 350, 191, 41))
+        self.output_text_currency = QtWidgets.QTextEdit(self.tab)
+        self.output_text_currency.setGeometry(QtCore.QRect(330, 250, 191, 61))
+        font = QtGui.QFont()
+        font.setFamily("Felix Titling")
+        font.setPointSize(10)
+        self.output_text_currency.setFont(font)
         self.output_text_currency.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.output_text_currency.setStyleSheet("")
+        self.output_text_currency.setStyleSheet("background: #EEE8AA;\n"
+"border: 2px solid #f66867;")
         self.output_text_currency.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAsNeeded)
         self.output_text_currency.setObjectName("output_text_currency")
-        self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(120, 110, 281, 41))
+        self.label_3 = QtWidgets.QLabel(self.tab)
+        self.label_3.setGeometry(QtCore.QRect(290, 250, 56, 51))
+        self.label_3.setObjectName("label_3")
+        self.output_amount = QtWidgets.QLineEdit(self.tab)
+        self.output_amount.setGeometry(QtCore.QRect(10, 330, 380, 60))
         font = QtGui.QFont()
+        font.setFamily("Felix Titling")
         font.setPointSize(12)
-        self.label_4.setFont(font)
-        self.label_4.setObjectName("label_4")
-        self.label_5 = QtWidgets.QLabel(self.centralwidget)
-        self.label_5.setGeometry(QtCore.QRect(130, 300, 271, 41))
+        self.output_amount.setFont(font)
+        self.output_amount.setStyleSheet("background: #EEE8AA;\n"
+"border: 2px solid #f66867;\n"
+"border-radius: 20;\n"
+"")
+        self.output_amount.setAlignment(QtCore.Qt.AlignCenter)
+        self.output_amount.setReadOnly(True)
+        self.output_amount.setObjectName("output_amount")
+        self.pushButton = QtWidgets.QPushButton(self.tab)
+        self.pushButton.setGeometry(QtCore.QRect(70, 420, 380, 60))
         font = QtGui.QFont()
-        font.setPointSize(12)
-        self.label_5.setFont(font)
-        self.label_5.setObjectName("label_5")
-        self.listView = QtWidgets.QListView(self.centralwidget)
-        self.listView.setGeometry(QtCore.QRect(540, 0, 361, 611))
-        self.listView.setObjectName("listView")
+        font.setFamily("Felix Titling")
+        self.pushButton.setFont(font)
+        self.pushButton.setStyleSheet("background: #EEE8AA;\n"
+"border: 2px solid #f66867;")
+        self.pushButton.setObjectName("pushButton")
+        self.history_list = QtWidgets.QListWidget(self.tab)
+        self.history_list.setGeometry(QtCore.QRect(540, 0, 351, 511))
+        font = QtGui.QFont()
+        font.setFamily("Felix Titling")
+        font.setPointSize(16)
+        self.history_list.setFont(font)
+        self.history_list.setStyleSheet("background: #EEE8AA;\n"
+"    width: 263px;\n"
+"    border: 2px solid #B8860B;\n"
+"    padding: 2px;")
+        self.history_list.setObjectName("history_list")
+        self.label_3.raise_()
+        self.label_2.raise_()
+        self.label_4.raise_()
+        self.input_currency.raise_()
+        self.label_5.raise_()
+        self.input_text_currency.raise_()
+        self.input_amount.raise_()
+        self.output_currency.raise_()
+        self.output_text_currency.raise_()
+        self.output_amount.raise_()
+        self.pushButton.raise_()
+        self.history_list.raise_()
+        self.tabWidget.addTab(self.tab, "")
+        self.tab_2 = QtWidgets.QWidget()
+        self.tab_2.setObjectName("tab_2")
+        self.tabWidget.addTab(self.tab_2, "")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Конвертер валют"))
-        self.label.setText(_translate("MainWindow", "Конвертер валют"))
-        self.pushButton.setText(_translate("MainWindow", "КОНВЕРТИРОВАТЬ"))
+        self.label_8.setText(_translate("MainWindow", "История операций"))
+        self.label_4.setText(_translate("MainWindow", "Введите исходную сумму и её валюту "))
         self.input_currency.setItemText(0, _translate("MainWindow", "Найдите валюту в списке"))
         self.input_currency.setItemText(1, _translate("MainWindow", "RUB - Рубль"))
         self.input_currency.setItemText(2, _translate("MainWindow", "USD - Доллар США"))
@@ -251,12 +316,13 @@ class Ui_MainWindow(object):
         self.input_currency.setItemText(40, _translate("MainWindow", "MTL - Мальтийская лира"))
         self.input_currency.setItemText(41, _translate("MainWindow", "EEK - Эстонская крона"))
         self.input_currency.setItemText(42, _translate("MainWindow", "CYP - Кипрский фунт"))
-        self.label_2.setText(_translate("MainWindow", "или"))
+        self.label_5.setText(_translate("MainWindow", "Введите валюту конечной суммы"))
         self.input_text_currency.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+"</style></head><body style=\" font-family:\'Felix Titling\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:8.25pt;\"><br /></p></body></html>"))
+        self.label_2.setText(_translate("MainWindow", "или"))
         self.output_currency.setItemText(0, _translate("MainWindow", "Найдите валюту в списке"))
         self.output_currency.setItemText(1, _translate("MainWindow", "RUB - Рубль"))
         self.output_currency.setItemText(2, _translate("MainWindow", "USD - Доллар США"))
@@ -300,11 +366,12 @@ class Ui_MainWindow(object):
         self.output_currency.setItemText(40, _translate("MainWindow", "MTL - Мальтийская лира"))
         self.output_currency.setItemText(41, _translate("MainWindow", "EEK - Эстонская крона"))
         self.output_currency.setItemText(42, _translate("MainWindow", "CYP - Кипрский фунт"))
-        self.label_3.setText(_translate("MainWindow", "или"))
         self.output_text_currency.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.label_4.setText(_translate("MainWindow", "Введите исходную сумму и её валюту "))
-        self.label_5.setText(_translate("MainWindow", "Введите валюту конечной сумму"))
+"</style></head><body style=\" font-family:\'Felix Titling\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:8.25pt;\"><br /></p></body></html>"))
+        self.label_3.setText(_translate("MainWindow", "или"))
+        self.pushButton.setText(_translate("MainWindow", "КОНВЕРТИРОВАТЬ"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Конвертер"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Калькулятор"))
