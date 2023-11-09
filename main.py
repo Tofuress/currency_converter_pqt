@@ -1,16 +1,15 @@
 import sys
 from PyQt5 import QtWidgets
-from PyQt5.QtGui import QIcon, QFont, QFontDatabase
+from PyQt5.QtGui import QIcon
+# from PyQt5.QtGui import QFont, QFontDatabase
 from ui import Ui_MainWindow
 from currency_converter import CurrencyConverter
-from PyQt5 import uic
 import re
 
 
 class CurrencyConv(QtWidgets.QMainWindow):
     def __init__(self):
         super(CurrencyConv, self).__init__()
-        uic.loadUi('design.ui', self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.init_UI()
@@ -18,14 +17,15 @@ class CurrencyConv(QtWidgets.QMainWindow):
 
     # подключение дизайна из файла ui.py
     def init_UI(self):
-        self.setWindowIcon(QIcon('logo.png'))
+        a = 'logo.ico'
+        self.setWindowIcon(QIcon(a))
         self.setWindowTitle('Конвертер валют')
         self.ui.input_amount.setPlaceholderText('Введите сумму')
         self.ui.output_amount.setPlaceholderText('Результат')
         self.ui.input_text_currency.setPlaceholderText('Введите аббревиатуру валюты')
         self.ui.output_text_currency.setPlaceholderText('Введите аббревиатуру валюты')
         self.ui.pushButton.clicked.connect(self.converter)
-        font_id = QFontDatabase.addApplicationFont('Unbounded-VariableFont_wght.ttf')
+        # font_id = QFontDatabase.addApplicationFont('Unbounded-VariableFont_wght.ttf')
 
         # связка кнопок с функциями
         lst_calc_btns = [self.ui.btn_0, self.ui.btn_1, self.ui.btn_2, self.ui.btn_3, self.ui.btn_4, self.ui.btn_5,
@@ -40,6 +40,7 @@ class CurrencyConv(QtWidgets.QMainWindow):
         self.ui.clear_1.clicked.connect(self.delete_1)
         self.ui.clear_2.clicked.connect(self.delete_2)
 
+        """
         # добавление шрифта Unbounded regular
         font_family = QFontDatabase.applicationFontFamilies(font_id)[0]
         custom_font = QFont(font_family, 18)
@@ -58,6 +59,7 @@ class CurrencyConv(QtWidgets.QMainWindow):
             i.setFont(custom_font_1)
         self.ui.label_8.setFont(custom_font)
         self.ui.tabWidget.setFont(custom_font)
+        """
 
         # очищение истории конвертера валют
     def delete_1(self):
@@ -226,3 +228,4 @@ application.show()
 
 sys.exit(app.exec())
 # pyuic5.exe design.ui -o ui.py
+# pyinstaller --onefile --windowed --icon=d:\Users\Sofia\Documents\script_files_all\currency_converter_pqt\logo.ico main.py
